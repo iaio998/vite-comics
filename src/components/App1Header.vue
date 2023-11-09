@@ -4,10 +4,10 @@
       <span>
         <img src="/public/img/dc-logo.png" alt="Logo" />
       </span>
-      <ul class="d-flex">
-        <li class=""><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
+      <ul class="d-flex m-0 p-0">
+        <li v-for="(option, id) in menu" :key="option.id">
+          <a href="#">{{ option.text }}</a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -17,7 +17,51 @@
 export default {
   name: "App1Header",
   data() {
-    return {};
+    return {
+      menu: [
+        {
+          id: 1,
+          text: "CHARACTERS",
+        },
+        {
+          id: 2,
+          text: "COMICS",
+        },
+        {
+          id: 3,
+          text: "MOVIES",
+        },
+        {
+          id: 4,
+          text: "TV",
+        },
+        {
+          id: 5,
+          text: "GAMES",
+        },
+        {
+          id: 6,
+          text: "COLLECTIBLES",
+        },
+        {
+          id: 7,
+          text: "VIDEOS",
+        },
+        {
+          id: 8,
+          text: "FANS",
+        },
+        {
+          id: 9,
+          text: "NEW",
+        },
+        {
+          id: 10,
+          text: "SHOP",
+        },
+      ],
+      activeOption: 1,
+    };
   },
   methods: {},
 };
@@ -30,5 +74,10 @@ export default {
 }
 a {
   color: black;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+li {
+  padding: 60px 15px;
 }
 </style>

@@ -37,7 +37,6 @@ export default {
 
 <style lang="css" scoped>
 .god {
-  height: 500px;
   background-image: url(../../public/img/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;

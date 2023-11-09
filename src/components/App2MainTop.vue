@@ -11,7 +11,7 @@ export default {
 <template>
   <div class="god">
     <div class="container">
-      <h2 class="m-0 py-3">Content goes here</h2>
+      <h2 class="m-0 py-5">Content goes here</h2>
     </div>
   </div>
 </template>
