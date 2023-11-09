@@ -2,7 +2,15 @@
 export default {
   name: "App5Footer",
   data() {
-    return {};
+    return {
+      links: [
+        { id: 1, image: "img/footer-facebook.png" },
+        { id: 2, image: "img/footer-twitter.png" },
+        { id: 3, image: "img/footer-youtube.png" },
+        { id: 4, image: "img/footer-pinterest.png" },
+        { id: 5, image: "img/footer-periscope.png" },
+      ],
+    };
   },
   methods: {},
 };
@@ -12,12 +20,13 @@ export default {
   <div class="god w-100 d-flex align-items-center">
     <div class="container d-flex justify-content-between h-100">
       <div class="h-100 d-flex align-items-center">
-        <button class="btn btn-primary">SIGN UP NOW!</button>
+        <button>SIGN UP NOW!</button>
       </div>
-      <ul class="d-flex align-items-center m-0 p-0">
-        <h5 class="m-0">FOLLOW US</h5>
-        <li><span>Logo 1</span></li>
-        <li><span>Logo 2</span></li>
+      <ul class="d-flex align-items-center m-0 p-0 gap-2">
+        <h6 class="title m-0 px-2">FOLLOW US</h6>
+        <li v-for="link in links">
+          <a href="#"><img :src="link.image" alt="" /></a>
+        </li>
       </ul>
     </div>
   </div>
@@ -26,9 +35,22 @@ export default {
 <style lang="css" scoped>
 .god {
   background-color: #303030;
+  color: white;
   height: 90px;
   position: fixed;
   bottom: 0;
   right: 0;
+}
+.title {
+  font-weight: bold;
+  color: #0282f9;
+}
+button {
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  box-shadow: none;
+  border: 2px solid #0282f9;
+  padding: 10px;
 }
 </style>

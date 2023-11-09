@@ -35,7 +35,7 @@ export default {
 
 <template>
   <div class="god py-4">
-    <div class="container d-flex justify-content-between position-relative">
+    <div class="container d-flex justify-content-between">
       <div class="d-flex">
         <div>
           <ul>
@@ -83,7 +83,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  height: 100%;
+  height: 500px;
 }
 a {
   color: #91918f;
@@ -93,7 +93,7 @@ a {
   height: 500px;
   position: absolute;
   right: 95px;
-  top: 1px;
-  bottom: 10px;
+  top: 350px;
+  right: 250px;
 }
 </style>
