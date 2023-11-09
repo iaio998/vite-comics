@@ -2,7 +2,7 @@
   <div class="god">
     <nav class="container d-flex align-items-center justify-content-between">
       <span>
-        <img src="/public/img/dc-logo.png" alt="Logo" />
+        <img src="img/dc-logo.png" alt="Logo" />
       </span>
       <ul class="d-flex m-0 p-0">
         <li v-for="(option, id) in menu" :key="option.id">
@@ -60,7 +60,6 @@ export default {
           text: "SHOP",
         },
       ],
-      activeOption: 1,
     };
   },
   methods: {},
