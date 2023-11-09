@@ -1,26 +1,26 @@
 <script>
-import App1Header from './components/App1Header.vue'
-// import TheWelcome from './components/TheWelcome.vue'
+import App1Header from "./components/App1Header.vue";
+import App2MainTop from "./components/App2MainTop.vue";
+import App3MainBot from "./components/App3MainBot.vue";
 
 export default {
-  name: 'App',
-  components:{
+  name: "App",
+  components: {
     App1Header,
-
+    App2MainTop,
+    App3MainBot,
   },
-  data(){
-    return{
-
-    }
+  data() {
+    return {};
   },
-  methods:{}
-}
+  methods: {},
+};
 </script>
 
 <template>
-  
+  <App1Header />
+  <App2MainTop />
+  <App3MainBot />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
