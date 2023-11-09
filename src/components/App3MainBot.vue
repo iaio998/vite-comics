@@ -16,6 +16,10 @@ export default {
           <img src="" alt="" />
           <a href="#">1</a>
         </li>
+        <li>
+          <img src="" alt="" />
+          <a href="#">2</a>
+        </li>
       </ul>
     </div>
   </div>

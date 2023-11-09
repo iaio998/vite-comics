@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="container">
+    <div class="container d-flex">
       <span>
         <img src="/public/img/dc-logo.png" alt="Logo" />
       </span>
-      <ul>
+      <ul class="d-flex">
         <li><a href="#">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
@@ -23,6 +23,4 @@ export default {
 };
 </script>
 
-<style scoped>
-/* @use "../assets/main.css"; */
-</style>
+<style scoped></style>
