@@ -9,9 +9,9 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="god">
     <div class="container">
-      <ul class="">
+      <ul class="d-flex m-0">
         <li>
           <img src="" alt="" />
           <a href="#">1</a>
@@ -25,4 +25,12 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style lang="css" scoped>
+.god {
+  background-color: #0282f9;
+  color: white;
+}
+a {
+  color: white;
+}
+</style>

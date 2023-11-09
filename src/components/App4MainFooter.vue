@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="god">
     <div class="container d-flex">
       <div>
         <ul>
@@ -35,4 +35,14 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style lang="css" scoped>
+.god {
+  height: 500px;
+  background-image: url(../../public/img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  color: white;
+}
+</style>

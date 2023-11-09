@@ -9,11 +9,13 @@ export default {
 </script>
 
 <template>
-  <div>
-    <div class="container d-flex justify-content-between">
-      <button>SIGN UP NOW!</button>
-      <ul class="d-flex">
-        <h5>FOLLOW US</h5>
+  <div class="god w-100 d-flex align-items-center">
+    <div class="container d-flex justify-content-between h-100">
+      <div class="h-100 d-flex align-items-center">
+        <button class="btn btn-primary">SIGN UP NOW!</button>
+      </div>
+      <ul class="d-flex align-items-center m-0 p-0">
+        <h5 class="m-0">FOLLOW US</h5>
         <li><span>Logo 1</span></li>
         <li><span>Logo 2</span></li>
       </ul>
@@ -21,4 +23,12 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style lang="css" scoped>
+.god {
+  background-color: #303030;
+  height: 90px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+</style>

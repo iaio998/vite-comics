@@ -9,11 +9,16 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="god">
     <div class="container">
-      <h2>Content goes here</h2>
+      <h2 class="m-0 py-3">Content goes here</h2>
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style lang="css" scoped>
+.god {
+  background-color: black;
+  color: white;
+}
+</style>
