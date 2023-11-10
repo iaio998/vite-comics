@@ -79,5 +79,9 @@ a {
 }
 li {
   padding: 60px 15px;
+
+  &:hover {
+    border-bottom: 5px solid $color-electric-blue;
+  }
 }
 </style>

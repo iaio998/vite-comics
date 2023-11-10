@@ -42,17 +42,22 @@ export default {
   z-index: 999;
   bottom: 0;
   right: 0;
-}
-.title {
-  font-weight: bold;
-  color: #0282f9;
-}
-button {
-  font-weight: bold;
-  color: white;
-  background-color: transparent;
-  box-shadow: none;
-  border: 2px solid #0282f9;
-  padding: 10px;
+
+  .title {
+    font-weight: bold;
+    color: #0282f9;
+  }
+  button {
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    box-shadow: none;
+    border: 2px solid #0282f9;
+    padding: 10px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
 </style>

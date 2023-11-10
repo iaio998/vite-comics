@@ -22,16 +22,21 @@ export default {
   background-image: url(/img/jumbotron.jpg);
   background-size: cover;
   height: 400px;
-}
-button {
-  font-weight: bold;
-  color: $color-white;
-  background-color: $color-electric-blue;
-  box-shadow: none;
-  border: 0;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  transform: translate(-30%, 50%);
+
+  button {
+    font-weight: bold;
+    color: $color-white;
+    background-color: $color-electric-blue;
+    box-shadow: none;
+    border: 0;
+    padding: 10px;
+    position: absolute;
+    bottom: -25px;
+    left: -1%;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
 </style>
