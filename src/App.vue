@@ -1,18 +1,20 @@
 <script>
-import App1Header from "./components/App1Header.vue";
-import App2MainTop from "./components/App2MainTop.vue";
-import App3MainBot from "./components/App3MainBot.vue";
-import App4MainFooter from "./components/App4MainFooter.vue";
-import App5Footer from "./components/App5Footer.vue";
+import AppHeader from "./components/AppHeader.vue";
+import AppJumbo from "./components/AppJumbo.vue";
+import AppMainTop from "./components/AppMainTop.vue";
+import AppMainBot from "./components/AppMainBot.vue";
+import AppMainFooter from "./components/AppMainFooter.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
   name: "App",
   components: {
-    App1Header,
-    App2MainTop,
-    App3MainBot,
-    App4MainFooter,
-    App5Footer,
+    AppHeader,
+    AppJumbo,
+    AppMainTop,
+    AppMainBot,
+    AppMainFooter,
+    AppFooter,
   },
   data() {
     return {};
@@ -22,11 +24,12 @@ export default {
 </script>
 
 <template>
-  <App1Header />
-  <App2MainTop />
-  <App3MainBot />
-  <App4MainFooter />
-  <App5Footer />
+  <AppHeader />
+  <AppJumbo />
+  <AppMainTop />
+  <AppMainBot />
+  <AppMainFooter />
+  <AppFooter />
 </template>
 
 <style scoped></style>

@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "App4MainFooter",
+  name: "AppMainFooter",
   data() {
     return {
       first: [

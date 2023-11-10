@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "App1Header",
+  name: "AppHeader",
   data() {
     return {
       menu: [

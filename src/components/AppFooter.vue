@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "App5Footer",
+  name: "AppFooter",
   data() {
     return {
       links: [

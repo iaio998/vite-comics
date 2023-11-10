@@ -1,9 +1,9 @@
 <template>
   <div class="col-2">
-    <div class="">
-      <img :src="img" class="" :alt="title" />
-      <div class="">
-        <h5 class="title">{{ title }}</h5>
+    <div>
+      <img :src="img" :alt="title" />
+      <div>
+        <h6 class="title">{{ title }}</h6>
       </div>
     </div>
   </div>

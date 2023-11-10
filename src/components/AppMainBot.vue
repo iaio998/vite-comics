@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: "App3MainBot",
+  name: "AppMainBot",
   data() {
     return {
       menu: [

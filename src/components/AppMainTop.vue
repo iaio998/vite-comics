@@ -3,7 +3,7 @@ import Card from "./Card.vue";
 import { cards } from "../assets/data/data.js";
 
 export default {
-  name: "App2MainTop",
+  name: "AppMainTop",
   components: { Card },
   data() {
     return {
