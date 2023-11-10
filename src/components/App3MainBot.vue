@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row d-flex m-0 g-5 py-4">
         <div
-          class="d-flex align-items-center col gap-2 m-0 p-0"
+          class="d-flex align-items-center col gap-2 m-0 px-2"
           v-for="(option, index) in menu"
         >
           <div class="div-img">
@@ -54,7 +54,8 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+@use "../assets/partials/variables" as *;
 .god {
   background-color: #0282f9;
   color: white;

@@ -1,60 +1,33 @@
 <script>
-import Slide from "./Slide.vue";
+import Card from "./Card.vue";
+import { cards } from "../assets/data/data.js";
+
 export default {
   name: "App2MainTop",
-  components: { Slide },
+  components: { Card },
   data() {
     return {
-      slides: [
-        {
-          image: "img/jumbotron.jpg",
-          title: "Masked Mayhem",
-          subtitle: "Batman squares off",
-        },
-        {
-          image: "img/jumbotron.jpg",
-          title: "Masked Elon",
-          subtitle: "Batman squares off",
-        },
-        {
-          image: "img/jumbotron.jpg",
-          title: "Masked Pisello",
-          subtitle: "Batman squares off",
-        },
-        {
-          image: "img/jumbotron.jpg",
-          title: "Pisell Elon ",
-          subtitle: "Batman squares off",
-        },
-      ],
-      indexSlide: 0,
+      comics: cards,
     };
   },
-  methods: {
-    indexPlus() {
-      this.indexSlide++;
-    },
-  },
+  methods: {},
 };
 </script>
 
 <template>
   <div class="god">
-    <div class="container">
-      <p class="m-0 py-5 fs-3">CONTENT GOES HERE</p>
+    <div class="container py-5">
+      <div class="row g-2">
+        <Card v-for="el in comics" :img="el.thumb" :title="el.series" />
+      </div>
     </div>
-    <!-- <Slide
-      @click="indexPlus()"
-      :img="slides[indexSlide].image"
-      :title="slides[indexSlide].title"
-      :subtitle="slides[indexSlide].subtitle"
-    /> -->
   </div>
 </template>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+@use "../assets/partials/variables" as *;
 .god {
-  background-color: black;
+  background-color: $color-black;
   color: white;
 }
 </style>

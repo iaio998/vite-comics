@@ -66,7 +66,8 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+@use "../assets/partials/variables" as *;
 .god {
   background-color: white;
   color: black;

@@ -38,13 +38,13 @@ export default {
     <div class="container d-flex justify-content-between">
       <div class="d-flex">
         <div>
-          <ul>
+          <ul class="p-0">
             <h4>DC COMICS</h4>
             <li v-for="element in first">
               <a href="#">{{ element }}</a>
             </li>
           </ul>
-          <ul>
+          <ul class="p-0">
             <h4>SHOP</h4>
             <li v-for="element in second">
               <a href="#">{{ element }}</a>
@@ -67,19 +67,16 @@ export default {
         </div>
       </div>
       <div>
-        <img
-          id="logo-bg"
-          src="../../public/img/dc-logo-bg.png"
-          alt="Logo background"
-        />
+        <img id="logo-bg" src="/img/dc-logo-bg.png" alt="Logo background" />
       </div>
     </div>
   </div>
 </template>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+@use "../assets/partials/variables" as *;
 .god {
-  background-image: url(../../public/img/footer-bg.jpg);
+  background-image: url(/img/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -91,9 +88,6 @@ a {
 #logo-bg {
   width: 500px;
   height: 500px;
-  position: absolute;
-  right: 95px;
-  top: 350px;
-  right: 250px;
+  transform: translate(0, -10%);
 }
 </style>

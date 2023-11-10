@@ -32,12 +32,14 @@ export default {
   </div>
 </template>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+@use "../assets/partials/variables" as *;
 .god {
   background-color: #303030;
   color: white;
   height: 90px;
   position: fixed;
+  z-index: 999;
   bottom: 0;
   right: 0;
 }
