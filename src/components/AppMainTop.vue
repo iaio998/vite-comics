@@ -21,7 +21,7 @@ export default {
         <Card v-for="el in comics" :img="el.thumb" :title="el.series" />
       </div>
       <div class="d-flex justify-content-center">
-        <button class="px-4 my-2">CURRENT SERIES</button>
+        <button class="my-2">LOAD MORE</button>
       </div>
     </div>
   </div>
@@ -40,7 +40,7 @@ export default {
     background-color: $color-electric-blue;
     box-shadow: none;
     border: 0;
-    padding: 10px;
+    padding: 10px 50px;
 
     &:hover {
       transform: scale(1.2);

@@ -5,7 +5,12 @@
         <img src="img/dc-logo.png" alt="Logo" />
       </span>
       <ul class="d-flex m-0 p-0">
-        <li v-for="(option, id) in menu" :key="option.id">
+        <li
+          @click="changeActiveOption(option.id)"
+          :class="activeElement(option.id)"
+          v-for="(option, id) in menu"
+          :key="option.id"
+        >
           <a href="#">{{ option.text }}</a>
         </li>
       </ul>
@@ -60,9 +65,23 @@ export default {
           text: "SHOP",
         },
       ],
+      activeOption: 0,
     };
   },
-  methods: {},
+  methods: {
+    changeActiveOption(id) {
+      for (let i = 0; i < this.menu.length; i++) {
+        if (this.menu[i].id === id) {
+          this.activeOption = i;
+        }
+      }
+    },
+    activeElement(id) {
+      if (this.menu[this.activeOption].id === id) {
+        return "is-active";
+      }
+    },
+  },
 };
 </script>
 
@@ -71,6 +90,9 @@ export default {
 .god {
   background-color: white;
   color: black;
+}
+.is-active {
+  border-bottom: 5px solid $color-electric-blue;
 }
 a {
   color: black;
@@ -81,6 +103,7 @@ li {
   padding: 60px 15px;
 
   &:hover {
+    cursor: pointer;
     border-bottom: 5px solid $color-electric-blue;
   }
 }
