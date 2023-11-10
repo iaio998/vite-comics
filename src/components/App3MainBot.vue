@@ -2,10 +2,14 @@
   <div class="god">
     <div class="container">
       <div class="row d-flex m-0 g-5 py-4">
-        <div class="col m-0 p-0" v-for="(option, index) in menu">
-          <a href="#"
-            ><img :src="option.img" :alt="option.text" /> {{ option.text }}</a
-          >
+        <div
+          class="d-flex align-items-center col gap-2 m-0 p-0"
+          v-for="(option, index) in menu"
+        >
+          <div class="div-img">
+            <img :src="option.img" :alt="option.text" />
+          </div>
+          <a href="#"> {{ option.text }}</a>
         </div>
       </div>
     </div>
@@ -59,10 +63,12 @@ a {
   color: white;
 }
 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.div-img {
   width: 50px;
   height: 50px;
-  /* display: block; */
-}
-span {
 }
 </style>
