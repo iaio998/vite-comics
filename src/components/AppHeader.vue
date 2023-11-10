@@ -65,7 +65,7 @@ export default {
           text: "SHOP",
         },
       ],
-      activeOption: 0,
+      activeOption: 1,
     };
   },
   methods: {
