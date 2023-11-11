@@ -54,6 +54,7 @@ export default {
     box-shadow: none;
     border: 2px solid #0282f9;
     padding: 10px;
+    transition: 0.5s ease;
 
     &:hover {
       transform: scale(1.1);

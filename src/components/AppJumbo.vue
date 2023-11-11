@@ -33,6 +33,7 @@ export default {
     position: absolute;
     bottom: -25px;
     left: -1%;
+    transition: 0.5s ease;
 
     &:hover {
       transform: scale(1.2);
